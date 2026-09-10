@@ -9,11 +9,7 @@ This project presents an automated workflow for **External Attack Surface Discov
 The project is designed to provide a **centralized and structured view
 of an organization's externally visible attack surface**.
 
-> **Note:** This system is intended for authorized security assessments
-> of explicitly defined target domains. Results represent findings
-> identified by the implemented workflow and should not be interpreted
-> as a guarantee that every possible asset or vulnerability has been
-> identified.
+> **Note:** This system is intended for authorized security assessments of explicitly defined target domains. Results represent findings identified by the implemented workflow and should not be interpreted as a guarantee that every possible asset or vulnerability has been identified.
 
 ## Key Features
 
@@ -190,30 +186,6 @@ Supported output formats include:
 
 The reporting layer provides both human-readable reports and machine-readable outputs for further analysis and processing.
 
-## Security & Reconnaissance Tools
-
-  -----------------------------------------------------------------------
-  Category                            Tools
-  ----------------------------------- -----------------------------------
-  Subdomain Discovery                 subfinder, Amass, Assetfinder,
-                                      Findomain, shuffledns
-
-  Port Discovery                      Naabu, Nmap, Masscan
-
-  DNS / Reconnaissance                DNS utilities, crt.sh, HackerTarget
-
-  Exposure Analysis                   Nuclei, Wapiti, Testssl, SSLScan,
-                                      FFUF, Subzy
-
-  Web / Technology Analysis           WhatWeb, Webanalyze, wafw00f
-
-  CMS Analysis                        WPScan, JoomScan
-
-  Threat Intelligence                 NVD, CISA KEV, FIRST EPSS
-
-  AI-Assisted Analysis                Google Gemini API
-  -----------------------------------------------------------------------
-
 # Architecture
 
 The system follows a modular architecture in which the web interface communicates with backend services through APIs. Functional modules process structured assessment data and use a shared database to maintain information across the workflow.
@@ -221,43 +193,6 @@ The system follows a modular architecture in which the web interface communicate
 <img width="1774" height="887" alt="Software" src="https://github.com/user-attachments/assets/ded2b9bb-80cf-44a1-8463-15fe30430f22" />
 
 The database maintains assessment scope information, discoveryobservations, correlated asset information, unified inventory data, exposure findings, threat-intelligence results, validation results, monitoring data, and reporting data.
-
-# Threat Intelligence & Risk Prioritization
-
-Threat intelligence provides additional context to relevant security findings through vulnerability information, known exploitation status, and exploitability probability.
-
-The project uses:
-
--   **NVD** for CVE information
--   **CISA KEV** for known exploited vulnerabilities
--   **FIRST EPSS** for exploitability probability
-
-Risk prioritization is performed using a deterministic approach based on
-available security and threat context. AI-assisted validation supports
-finding credibility and false-positive analysis but is not treated as
-the sole source of the final risk decision.
-
-# Assessment Results
-
-The implemented workflow provides evidence across multiple assessment stages, including:
-
--   External asset discovery
--   Asset and identity correlation
--   Unified attack surface inventory
--   Technology and SSL/TLS analysis
--   Configuration and web security analysis
--   Brand and email intelligence
--   Threat intelligence enrichment
--   AI-assisted finding validation
--   Continuous monitoring and delta analysis
--   Unified reporting
-
-The exposure-analysis stage identified findings across several security categories, providing a broader view of the externally visible security posture.
-
-> Assessment results depend on the target scope, discovery sources,
-> network conditions, available APIs, and the tools used during a
-> particular scan.
-
 
 # External Services, APIs & Sources
 
@@ -297,11 +232,10 @@ The resulting workflow provides a structured view of externally visible assets, 
 
 Potential future enhancements include:
 
--   Advanced AI-assisted attack-path analysis
+-   AI-assisted attack-path analysis
 -   Improved contextual risk prioritization
 -   Additional external intelligence integrations
 -   Automated remediation and ticketing workflows
--   Advanced historical trend analysis
 
 # Disclaimer
 

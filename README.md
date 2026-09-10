@@ -188,7 +188,7 @@ The reporting layer provides both human-readable reports and machine-readable ou
 
 # Architecture
 
-The system follows a modular architecture in which the web interface communicates with backend services through APIs. Functional modules process structured assessment data and use a shared database to maintain information across the workflow.
+The system follows a modular architecture in which the web interface communicates with backend services through FastAPI. Functional modules process structured assessment data and use a shared database to maintain information across the workflow.
 
 <img width="1774" height="887" alt="Software" src="https://github.com/user-attachments/assets/ded2b9bb-80cf-44a1-8463-15fe30430f22" />
 
@@ -237,14 +237,11 @@ Potential future enhancements include:
 -   Additional external intelligence integrations
 -   Automated remediation and ticketing workflows
 
-# Disclaimer
-
-This project is intended only for **authorized security testing and assessment**.
-
 ## Screenshot
 
 <img width="1916" height="902" alt="image" src="https://github.com/user-attachments/assets/b5fb5acf-cf4c-4cdb-90ad-c54706a6c1fa" />
 
+>Note: This project is intended only for **authorized security testing and assessment**.
 
 ## License
 

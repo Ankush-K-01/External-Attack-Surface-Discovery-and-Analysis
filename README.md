@@ -1,4 +1,4 @@
-# Automated External Attack Surface Discovery and Exposure Analysis
+# External Attack Surface Discovery and Analysis
 
 **Status:** 🚧 In Progress
 
